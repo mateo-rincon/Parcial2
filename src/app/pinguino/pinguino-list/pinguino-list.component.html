@@ -17,14 +17,14 @@
       <tbody>
         <tr *ngFor="let p of pinguinos">
           <td><dd>{{p.id}}<dd></td>
-          <td><dd><a  href="#" class="serie-name">{{p.name}}</a></dd></td>
+          <td><dd><a class="card-block text-decoration-none" (click)="onSelected(p)">{{p.name}}</a></dd></td>
           <td><dd>{{p.scientific_name}}</dd></td>
           <td><dd>{{p.feeding}}</dd></td>
           <td><dd>{{p.global_distribution}}</dd></td>
         </tr>
       </tbody>
       <tfoot>
-        
+        <p>La especie con mayor distribucion es:</p>
       </tfoot>
     </table>
   </div>

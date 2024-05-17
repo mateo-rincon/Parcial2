@@ -30,7 +30,10 @@ export class PinguinoListComponent implements OnInit {
     console.log(pinguino);
   }
 
+  
+
   ngOnInit() {
+    this.getPinguinos();
   }
 
 
